@@ -1,7 +1,7 @@
 %global srcname copr-tito-quickdoc
 
 Name: flatstall
-Version: 1.0.0
+Version: 1.0.1
 Release: 1%{?dist}
 License: GPLv3
 Summary: A Sideloader for Flatpak
@@ -17,7 +17,7 @@ BuildArch: x86_64
 BuildRequires: blueprint-compiler
 BuildRequires: cargo
 BuildRequires: rustc
-BuildRequires: meson-build
+BuildRequires: meson
 BuildRequires: ninja-build
 BuildRequires: flatpak-devel
 BuildRequires: libadwaita-devel
@@ -49,6 +49,9 @@ packaging using tito and Fedora's Copr user repository.
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* Sat Dec 02 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.1-1
+- 
+
 * Sat Dec 02 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.0-1
 - new package built with tito
 
