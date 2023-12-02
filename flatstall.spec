@@ -1,7 +1,7 @@
 %global srcname copr-tito-quickdoc
 
 Name: flatstall
-Version: 1.0.2
+Version: 1.0.3
 Release: 1%{?dist}
 License: GPLv3
 Summary: A Sideloader for Flatpak
@@ -50,6 +50,9 @@ Flatstall is a sideloader for Flatpak.
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* Sat Dec 02 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.3-1
+- Remove gnome post install (bedsteler2.0@gmail.com)
+
 * Sat Dec 02 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.2-1
 - Updated Dependencys 
 
