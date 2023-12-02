@@ -1,0 +1,94 @@
+using Gtk 4.0;
+using Adw 1;
+
+Adw.PreferencesWindow window {
+    title: "Install App";
+    default-height:  600;
+    default-width: 300;
+    resizable: false;
+    search-enabled: false;
+    
+}
+
+Adw.PreferencesPage about_page {
+    Box {
+        hexpand: true;
+        orientation: vertical;
+        Box {
+            Image icon {
+                hexpand: true;
+                height-request: 128;
+                width-request: 128;
+            }
+
+            Label name_label {
+                margin-top: 15;
+                styles ["title-1"]
+            }
+
+            Label summery_label {
+                margin-bottom: 15;
+            }
+
+            valign: center;
+            halign: center;
+            orientation: vertical;
+            hexpand: true;
+            vexpand: true;
+
+        }
+        Button install_btn {
+            label: "Install";
+            valign: end;
+            vexpand: true;
+            margin-bottom: 20;
+            margin-top: 20;
+            margin-start: 20;
+            margin-end: 20;
+            styles ["suggested-action", "pill"]
+        }
+    }
+}
+
+Adw.PreferencesPage install_page {
+   Box {
+        // halign: center;
+        valign: center;
+        orientation: vertical;
+        hexpand: true;
+        vexpand: true;
+
+        Image dl_icon {
+            hexpand: true;
+            height-request: 128;
+            width-request: 128;
+            icon-name: "folder-download-symbolic";
+            icon-size: large;
+            pixel-size: 128;
+            margin-bottom: 25;
+        }
+
+        Label install_msg {
+            label: "Installing";
+        }
+
+        ProgressBar progress_bar {
+            hexpand: true;
+            vexpand: true;
+            margin-bottom: 20;
+            margin-top: 20;
+            margin-start: 50;
+            margin-end: 50;
+        }
+   }
+}
+
+Adw.MessageDialog installed_dialog {
+    title: "App Installed";
+    heading: "App Installed";
+}
+
+Adw.MessageDialog error_dialog {
+    title: "Error";
+    heading: "Error";
+}

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Flatstall
+Exec=flatstall %u
+Comment=Sideloader for Flatpak
+Categories=System;
+Terminal=false
+Type=Application
+Icon=system-software-install
+StartupNotify=true
+NoDisplay=true
+MimeType=application/vnd.flatpak;application/vnd.flatpak.ref;
