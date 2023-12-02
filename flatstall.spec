@@ -1,7 +1,7 @@
 %global srcname copr-tito-quickdoc
 
 Name: flatstall
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{?dist}
 License: GPLv3
 Summary: A Sideloader for Flatpak
@@ -23,10 +23,11 @@ BuildRequires: flatpak-devel
 BuildRequires: libadwaita-devel
 BuildRequires: gtk4-devel
 
+Requires: flatpak
+Requires: libadwaita
+
 %description
-Hellocopr is a very simple demonstration program that does nothing but display
-some text on the command line. It is used as an example for automatic RPM
-packaging using tito and Fedora's Copr user repository.
+Flatstall is a sideloader for Flatpak.
 
 #-- PREP, BUILD & INSTALL -----------------------------------------------------#
 %prep
@@ -49,6 +50,9 @@ packaging using tito and Fedora's Copr user repository.
 
 #-- CHANGELOG -----------------------------------------------------------------#
 %changelog
+* Sat Dec 02 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.2-1
+- Updated Dependencys 
+
 * Sat Dec 02 2023 Cameron Dehning <bedsteler2.0@gmail.com> 1.0.1-1
 - 
 
